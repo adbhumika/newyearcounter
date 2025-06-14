@@ -1,0 +1,63 @@
+body{
+    padding: 0px;
+    margin:0px;
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+    justify-content:center;
+    text-align:center;
+    background:url("https://images.unsplash.com/photo-1743704458905-9edf92294d7e?q=80&w=1508&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    overflow:hidden;
+}
+h2{
+    color:rgb(5, 2, 2);
+    letter-spacing:3px;
+    text-transform:uppercase;
+}
+.year{
+    font-size:3rem;
+    font-weight:bold;
+}
+.countdown{
+     /* margin:30px; */
+    background-color:pink;
+    width:100%;
+    /* margin:30px; */
+    height:120px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.countdown div{
+    margin:0 0px;
+    font-weight:bold;
+    font-size:40px;
+    margin-bottom:25px;
+    position:relative;
+    align-items:center;
+    width:100px;
+}
+.countdown div::before{
+    content:"";
+    position:absolute;
+    top:30px;
+    left:0;
+    font-size:.35em;
+    margin:5px;
+    line-height:35px;
+    letter-spacing:1px;
+    width:100%;
+    height:35px;
+}
+.countdown #day::before{
+    content:"days";
+}
+.countdown #hours::before{
+    content:"hours";
+}
+.countdown #minutes::before{
+    content:"minutes";
+}
+.countdown #seconds::before{
+    content:"seconds"
+}
